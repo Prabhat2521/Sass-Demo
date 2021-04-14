@@ -1,0 +1,336 @@
+@import 'variables';
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $bg-light;
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    outline: none;
+    background-color: $primary-color;
+    color:$bg-white;
+    border-color: $primary-color;
+}
+
+header{
+    background-color: $bg-white;
+
+    .container-fluid{
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .row{
+        display:flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+    }
+}
+
+
+.input-group .form-control, .input-group .btn {
+    border: 1px solid #ced4da;
+    border-top: none;
+    border-bottom: none;
+}
+
+input:placeholder-shown {
+    font-style: italic;
+}
+
+header .row {
+    align-items: baseline;
+}
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:1.3rem;
+    max-width: 1000px;
+}
+
+
+.services{
+    display: flex;
+    justify-content: space-between;
+
+    .jm-services{
+        background-color: $bg-white;
+        text-align: center;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+    .features{
+        background-color: $bg-white;
+        text-align: center;
+        display: flex;
+      
+        div {
+            display: inline;
+            margin-left:0.4rem;
+            padding:2rem 1.5rem;
+            border-right: 1px solid #dee2e6;
+            
+            
+        }
+    }
+
+}
+
+.business-section{
+    display: flex;
+    .business-text{
+        background-color: $bg-white;
+        padding: 2.3rem;
+        h2{
+            text-transform: uppercase;
+            margin-bottom:0.5rem;
+
+        }
+        p{
+            color: #6c757d !important;
+            line-height: 1.4rem;
+            text-align: justify;
+            
+        }
+        .btn-primary{
+            @extend .btn;
+            float: right;
+            margin-top: 2rem;
+        }
+    }
+}
+
+.cards{
+    display: flex;
+    text-align: center;
+    color:$bg-white;
+    h2{
+        text-transform: uppercase;
+    }
+    i{
+        font-size:4.3rem;
+        margin:1.7rem 0;
+    }
+   
+ 
+    .card1{
+        background-color: $primary-color;
+        padding:1rem;
+        margin-right: 3rem;
+    }
+    .card2{
+        background-color: $green-color;
+        padding:1rem;
+        margin-right: 3rem;
+    }
+    .card3{
+        background-color: $orange-color;
+        padding:1rem;
+     
+    }
+}
+
+.projects{
+    background-color: $bg-white;
+    padding:2rem;
+    h4{
+        color:$primary-color;
+        text-transform: uppercase;
+        margin-bottom:1.2rem;
+    }
+    .card-deck{
+        display: flex;
+     
+        .img_bg{
+            background-image: url("https://content.thriveglobal.com/wp-content/uploads/2020/02/employee_behavior.jpeg");
+            background-size: cover;
+            border: none;
+            border-radius: 0%;
+        }
+       
+        .card{
+            position:relative;
+            width:100%;
+            margin-right:2rem;
+         
+            .card-footer{
+                position: absolute;
+                background-color: #595049;
+                opacity:0.9;
+                color:$bg-white;
+                bottom:0;
+            }
+            
+            p{
+                font-size: 0.9rem;
+                padding: 1rem;
+                text-align: center;
+            }
+            &:last-child{
+                margin-right:0rem;
+            }
+        }
+       
+        
+    }
+}
+
+.testimonials{
+    display:flex;
+    .few_words-section{
+        display:flex;
+        background-color: $bg-white;
+        margin-right: 4rem;
+        line-height: 1.5rem;
+       
+        .few_words-text{
+            margin-left: 2.3rem;
+            padding: 2rem 0rem;
+            margin-right: 1.5rem;
+          
+            h4{
+                text-transform: uppercase;
+                color:$primary-color;
+                margin-bottom:1rem;
+            }
+            p{
+                margin-bottom:1rem;
+            }
+            ul{
+                list-style: none;
+            }
+            ul>li:before{
+                content: "\f152"; /* FontAwesome Unicode */
+                font-family: FontAwesome;
+                display: inline-block;
+                margin-left: 1em; 
+                width: 1.3em; 
+                color:#558295;  
+            }
+            .btn-primary{
+                @extend .btn;
+                float: right;
+                margin-top:1.5rem;
+            }
+        }
+    }
+
+    .feedback{
+        background-color: $bg-white;
+        text-align: center;
+        padding-bottom: 2rem;
+        .rounded-circle{
+            width: 100px;
+            height: 100px;
+            margin-top: -47px;
+            border-radius: 50%;
+        }
+        h4{
+            margin: 0.5rem;
+        }
+        p{
+            color:$text-muted;
+        }
+
+    }
+   
+}
+
+footer{
+    background-color: $bg-footer;
+    h4{
+        color:$text-muted;
+        text-transform: uppercase;
+    }
+    .footer-content{
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid #dee2e6;
+        padding: 2rem 0;
+        .articles{
+            ul{
+                list-style: none;
+                color:$primary-color;
+                margin-top:1rem;
+                margin-left: 1.6rem;
+            }
+            ul>li:before{
+                content: "\f054";
+                font-family: FontAwesome;
+                display: inline-block;
+                width: 1.3em; 
+                color:#9B9B9B;
+                margin-bottom: 0.5rem;
+                font-size: 0.8rem;
+            }
+        }
+        .tags{
+            .btn-primary{
+                @extend .btn;
+                margin-top:1rem;
+            }
+        }
+
+        .news{
+            h5{
+                color:$primary-color;
+                margin-top:1rem;
+            }
+            p{
+                text-align: justify;
+                color:$text-muted;
+                font-size:0.9rem;
+            }
+        }
+
+        .connected{
+            div{
+                margin-top:1rem;
+            }
+            i{
+                font-size: 3rem;
+            }
+            .fb{
+                color:#0000ff;
+            }
+            .google{
+                color:rgb(243, 41, 41);
+            }
+            .twitter{
+                color:rgb(46, 163, 202);
+            }
+            .pin{
+                color:rgb(243, 47, 47);
+            }
+            .linkedin{
+                color:rgb(46, 163, 202);
+            }
+        }
+    }
+
+    .rights{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1.2rem;
+        span{
+            color:$primary-color;
+        }
+    }
+
+}

@@ -1,0 +1,301 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F8F9FA;
+}
+
+.btn, footer .footer-content .tags .btn-primary, .testimonials .few_words-section .few_words-text .btn-primary, .business-section .business-text .btn-primary {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+  background-color: #0979FA;
+  color: #fff;
+  border-color: #0979FA;
+}
+
+header {
+  background-color: #fff;
+}
+header .container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+header .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.input-group .form-control, .input-group .btn, .input-group footer .footer-content .tags .btn-primary, footer .footer-content .tags .input-group .btn-primary, .input-group .testimonials .few_words-section .few_words-text .btn-primary, .testimonials .few_words-section .few_words-text .input-group .btn-primary, .input-group .business-section .business-text .btn-primary, .business-section .business-text .input-group .btn-primary {
+  border: 1px solid #ced4da;
+  border-top: none;
+  border-bottom: none;
+}
+
+input:placeholder-shown {
+  font-style: italic;
+}
+
+header .row {
+  align-items: baseline;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1.3rem;
+  max-width: 1000px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+.services .jm-services {
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+}
+.services .features {
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+}
+.services .features div {
+  display: inline;
+  margin-left: 0.4rem;
+  padding: 2rem 1.5rem;
+  border-right: 1px solid #dee2e6;
+}
+
+.business-section {
+  display: flex;
+}
+.business-section .business-text {
+  background-color: #fff;
+  padding: 2.3rem;
+}
+.business-section .business-text h2 {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.business-section .business-text p {
+  color: #6c757d !important;
+  line-height: 1.4rem;
+  text-align: justify;
+}
+.business-section .business-text .btn-primary {
+  float: right;
+  margin-top: 2rem;
+}
+
+.cards {
+  display: flex;
+  text-align: center;
+  color: #fff;
+}
+.cards h2 {
+  text-transform: uppercase;
+}
+.cards i {
+  font-size: 4.3rem;
+  margin: 1.7rem 0;
+}
+.cards .card1 {
+  background-color: #0979FA;
+  padding: 1rem;
+  margin-right: 3rem;
+}
+.cards .card2 {
+  background-color: #A0AF46;
+  padding: 1rem;
+  margin-right: 3rem;
+}
+.cards .card3 {
+  background-color: #E48F62;
+  padding: 1rem;
+}
+
+.projects {
+  background-color: #fff;
+  padding: 2rem;
+}
+.projects h4 {
+  color: #0979FA;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+.projects .card-deck {
+  display: flex;
+}
+.projects .card-deck .img_bg {
+  background-image: url("https://content.thriveglobal.com/wp-content/uploads/2020/02/employee_behavior.jpeg");
+  background-size: cover;
+  border: none;
+  border-radius: 0%;
+}
+.projects .card-deck .card {
+  position: relative;
+  width: 100%;
+  margin-right: 2rem;
+}
+.projects .card-deck .card .card-footer {
+  position: absolute;
+  background-color: #595049;
+  opacity: 0.9;
+  color: #fff;
+  bottom: 0;
+}
+.projects .card-deck .card p {
+  font-size: 0.9rem;
+  padding: 1rem;
+  text-align: center;
+}
+.projects .card-deck .card:last-child {
+  margin-right: 0rem;
+}
+
+.testimonials {
+  display: flex;
+}
+.testimonials .few_words-section {
+  display: flex;
+  background-color: #fff;
+  margin-right: 4rem;
+  line-height: 1.5rem;
+}
+.testimonials .few_words-section .few_words-text {
+  margin-left: 2.3rem;
+  padding: 2rem 0rem;
+  margin-right: 1.5rem;
+}
+.testimonials .few_words-section .few_words-text h4 {
+  text-transform: uppercase;
+  color: #0979FA;
+  margin-bottom: 1rem;
+}
+.testimonials .few_words-section .few_words-text p {
+  margin-bottom: 1rem;
+}
+.testimonials .few_words-section .few_words-text ul {
+  list-style: none;
+}
+.testimonials .few_words-section .few_words-text ul > li:before {
+  content: "";
+  /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: 1em;
+  width: 1.3em;
+  color: #558295;
+}
+.testimonials .few_words-section .few_words-text .btn-primary {
+  float: right;
+  margin-top: 1.5rem;
+}
+.testimonials .feedback {
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.testimonials .feedback .rounded-circle {
+  width: 100px;
+  height: 100px;
+  margin-top: -47px;
+  border-radius: 50%;
+}
+.testimonials .feedback h4 {
+  margin: 0.5rem;
+}
+.testimonials .feedback p {
+  color: #6c757d !important;
+}
+
+footer {
+  background-color: #E7E7E7;
+}
+footer h4 {
+  color: #6c757d !important;
+  text-transform: uppercase;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #dee2e6;
+  padding: 2rem 0;
+}
+footer .footer-content .articles ul {
+  list-style: none;
+  color: #0979FA;
+  margin-top: 1rem;
+  margin-left: 1.6rem;
+}
+footer .footer-content .articles ul > li:before {
+  content: "";
+  font-family: FontAwesome;
+  display: inline-block;
+  width: 1.3em;
+  color: #9B9B9B;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+footer .footer-content .tags .btn-primary {
+  margin-top: 1rem;
+}
+footer .footer-content .news h5 {
+  color: #0979FA;
+  margin-top: 1rem;
+}
+footer .footer-content .news p {
+  text-align: justify;
+  color: #6c757d !important;
+  font-size: 0.9rem;
+}
+footer .footer-content .connected div {
+  margin-top: 1rem;
+}
+footer .footer-content .connected i {
+  font-size: 3rem;
+}
+footer .footer-content .connected .fb {
+  color: #0000ff;
+}
+footer .footer-content .connected .google {
+  color: #f32929;
+}
+footer .footer-content .connected .twitter {
+  color: #2ea3ca;
+}
+footer .footer-content .connected .pin {
+  color: #f32f2f;
+}
+footer .footer-content .connected .linkedin {
+  color: #2ea3ca;
+}
+footer .rights {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.2rem;
+}
+footer .rights span {
+  color: #0979FA;
+}
+
+/*# sourceMappingURL=style.css.map */
